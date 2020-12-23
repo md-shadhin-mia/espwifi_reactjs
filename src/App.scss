@@ -1,0 +1,53 @@
+@mixin mobilewidth {
+  @media only screen and (max-width: 600px) {
+    @content;
+  }
+}
+:root {
+  --darkbaground: #24292d;
+  --primary: #3e7bff;
+  --secondary: #2c325d;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.conteiner {
+  color: #ffffff;
+  width: 80vw;
+  min-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--darkbaground);
+  padding: 2px;
+  @include mobilewidth {
+    width: 100vw;
+    padding: 2px;
+  }
+}
+
+.navbar {
+  list-style: none;
+  margin-top: 4px;
+  .nav-item {
+    display: inline-block;
+    margin: 4px;
+    .nav-link {
+      text-decoration: none;
+      padding: 8px;
+    }
+    &.active {
+      background-color: --secondary !important;
+    }
+  }
+}
+.btn {
+  background-color: linear-gradient(top, #f6e6b4 0%, #ed9017 100%);
+  border-radius: 5px;
+  border: solid #ccc 3px;
+  box-shadow: 0 1px 2px #212547, /*bottom external highlight*/ 0 -1px 1px #666,
+    /*top external shadow*/ inset 0 -1px 1px rgba(0, 0, 0, 0.5),
+    /*bottom internal shadow*/ inset 0 1px 1px rgba(255, 255, 255, 0.8); /*top internal highlight*/
+}
