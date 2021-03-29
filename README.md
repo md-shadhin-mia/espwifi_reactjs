@@ -1,1 +1,1 @@
-# UI management with React App For Inteligent of Wireless Fidelity
+# UI management with React App For Intelligent of Wireless Fidelity
