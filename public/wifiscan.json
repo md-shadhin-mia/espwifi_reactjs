@@ -1,0 +1,20 @@
+{
+    "wifis":[
+        {
+            "ssid":"Abul",
+            "channel" : 11,
+            "signal" : -99,
+            "mac" : "52:41:41:45:41:41",
+            "encryption" : "WPA2 / PSK",
+            "hidden" : "true"
+        },
+        {
+            "ssid":"bulbul",
+            "channel" : 44,
+            "signal" : -11,
+            "mac" : "52:aa:41:cc:41:41",
+            "encryption" : "WPA/PSK",
+            "hidden" : "true"
+        }
+    ]
+}

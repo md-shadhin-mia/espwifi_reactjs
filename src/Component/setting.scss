@@ -1,0 +1,55 @@
+button:focus {
+  outline: 1px yellow solid;
+}
+button:hover {
+  outline: 1px blue solid;
+  background: whitesmoke;
+}
+
+button {
+  margin: none;
+  border: none;
+  padding: 2px 4px;
+}
+.propertics {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+.item {
+  display: flex;
+  align-content: center;
+  padding: 5px;
+  margin-bottom: 8px;
+  background-color: #e2e2e2;
+  font-size: 1.3em;
+  height: 1.3em;
+  & button {
+    align-self: stretch;
+  }
+  & .name {
+    margin-right: 12px;
+    font-weight: bold;
+  }
+  & .edit {
+    margin-left: auto;
+    padding-left: 8px;
+    display: flex;
+  }
+  & .value {
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+    margin-right: 4px;
+    & input[type="text"] {
+      font-size: 1em;
+      width: 100%;
+      padding: 4px;
+      border-radius: 5px;
+      border: none;
+      &:focus {
+        outline: none;
+        border: 1px solid green;
+      }
+    }
+  }
+}

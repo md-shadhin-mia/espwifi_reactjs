@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from "react-router-dom";
 class Status extends Component {
   constructor(props) {
     super(props);
@@ -7,7 +8,13 @@ class Status extends Component {
   render() {
     return (
       <div className="status">
-        <h2>This is status page</h2>
+        <Link to="/setting">
+          setting
+        </Link>
+        <br/>
+        <Link to="/new-wifi">
+          Connect New
+        </Link>
       </div>
     );
   }
